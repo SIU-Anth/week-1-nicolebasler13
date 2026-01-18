@@ -1,8 +1,8 @@
 ---
-title: "Hello, Quarto"
+title: "Hello, Quarto"(WEEK 1)
 format: html
 editor: visual
-author: Chris Stantis
+author: Nicole Basler 
 ---
 
 ## First Steps
@@ -22,7 +22,7 @@ library(palmerpenguins)
 
 Did you get any error codes?
 
--   [ ] **Task**: Copy/paste your error code here: <!-- Copy/paste your error codes on the line below here, I'll be looking for them. By the way, this is one way to comment Quarto documents -->
+-   [ ] **Task**: Copy/paste your error code here: <!-- Copy/paste your error codes on the line below here, I'll be looking for them. By the way, this is one way to comment Quarto documents --> \> #\| include: false \> \> library(tidyverse) ── Attaching core tidyverse packages ──────────────── tidyverse 2.0.0 ── ✔ dplyr 1.1.4 ✔ readr 2.1.6 ✔ forcats 1.0.1 ✔ stringr 1.6.0 ✔ ggplot2 4.0.1 ✔ tibble 3.3.1 ✔ lubridate 1.9.4 ✔ tidyr 1.3.2 ✔ purrr 1.2.1 ── Conflicts ────────────────────────────────── tidyverse_conflicts() ── ✖ dplyr::filter() masks stats::filter() ✖ dplyr::lag() masks stats::lag() ℹ Use the conflicted package to force all conflicts to become errors \> library(palmerpenguins) Attaching package: ‘palmerpenguins’ The following objects are masked from ‘package:datasets’: penguins, penguins_raw
 
 If you haven't played around in R before, you might not have packages installed. Run the following code, noting that you have to put your packages in quotes for `install.packages`
 
@@ -34,7 +34,7 @@ install.packages("palmerpenguins")
 
 That installed the packages onto your computer so that R can access it. In order to use it in our current session, we have to load the package using the library() function.
 
--   [ ] **Task**: Re-run the code chunk that loads libraries tidyverse and palmerpenguins, now that you've installed them.
+-   [x] **Task**: Re-run the code chunk that loads libraries tidyverse and palmerpenguins, now that you've installed them.
 
 ## Meet Quarto
 
@@ -84,7 +84,9 @@ There's generally three ways to load data into R environment.
 
 3.  Run some handy code.
 
--   [ ] **Task**: Below, write one reason you'd use the 'Import Dataset...' button, and one reason you'd have some code to load data.
+-   [x] **Task**: Below, write one reason you'd use the 'Import Dataset...' button, and one reason you'd have some code to load data.
+
+    If you import the data set it will be wayy easier than wrtingit all up in code. One reason is to create useable data that would work along your research.
 
 I suggest you play with the Import Dataset button to bring in the dataset (there's some good reasons to use it), but there's also this handy code chunk:
 
@@ -104,6 +106,6 @@ We'll talk more about types of data and ways to store data (generally and in R) 
 
 In the square in the top right of your screen, check out the Environment tab. Do you see the dataframe df? Click the little blue and white circled arrow next to it, you'll now see 28 variables.
 
--   [ ] **Task:** Write a few (3-5) sentences about the types of data you see (just pick a few, no need to go crazy Week 1), and then a couple sentences about what you think this dataset is from. (Hint 1: I've left enough breadcrumbs that you can find the original publication.) (Hint 2: If you click on the dataframe in the top right pane, the dataframe will open as a table in this pane and you can more easily scroll about.)
+-   [ ] **Task:** Write a few (3-5) sentences about the types of data you see (just pick a few, no need to go crazy Week 1), and then a couple sentences about what you think this dataset is from. (Hint 1: I've left enough breadcrumbs that you can find the original publication.) (Hint 2: If you click on the data frame in the top right pane, the data frame will open as a table in this pane and you can more easily scroll about.) This data is about Plamer's penguins and their flipplre and bill lengths across different species of penguins. The species of penguins are chinstrap, Gentoo, and Adile. What i see in the data set that is interesting is that there are battering edge damage on there beaks and flippers. the data set is from Palmers penguins and it looks like an anthropological data set as well.
 
 -   [ ] Change the title and author of this document to a title that makes sense to you and your name as author. Submit these Quarto files via GitHub and/or D2L. In my ideal world, you push to Github and then just paste the link in the assignment tab on D2L- let's me find your GitHub quickly, and it saves you from D2L "reminding" you that you haven't done the assignment.
